@@ -1,0 +1,40 @@
+.containerCard{
+    width: 160px;
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: #1D1D1D;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+
+
+}
+
+.text{
+    margin: 0;
+}
+
+.price{
+    margin: 10px auto;
+}
+
+.btn{
+    width: 70%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+}
+
+@media (max-width:1200px) and (min-width:1050px){
+    .containerCard{
+        width: 140px;
+    }
+}
+
+@media (max-width:1050px) and (min-width:1050px){
+    .containerCard{
+        width: 140px;
+    }
+}

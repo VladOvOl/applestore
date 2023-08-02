@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    top:0;
+    left: 0;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #1D1D1D;
+}
+
+.containerBtnX{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+   color: white;
+   font-size: 30px;
+   margin: 10px auto;
+}
+
+.BtnX{
+    margin-right: 10px;
+}
+
+hr{
+    margin: 0 15px;
+}
+
+.containerMenu{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.containerIphone, .containerIpad , .containerMac ,.containerAppleWatch, 
+.containerAirPods, .containerIphoneby, .containerRepair{
+    display: flex;
+    align-items: center;
+    margin: 2px 20px;
+}
