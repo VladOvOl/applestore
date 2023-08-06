@@ -1,0 +1,47 @@
+.container{
+    width: 200px;
+    height: 255px;
+    background-color: #1D1D1D;
+    color: white;
+    margin: 50px 10px 10px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.text{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.passiveBtn{
+    transition: all 2s ease-in-out;
+    display: none;
+}
+
+.activeBtn{
+    padding-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease-in-out;
+}
+
+.btn{
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    cursor: pointer;
+    
+}
+
+.container:hover{
+    height: 300px;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.95;
+
+}

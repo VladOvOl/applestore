@@ -8,10 +8,20 @@ function CanvasCard(props) {
 
   const[data, setData] = useState([])
   
-    useEffect(()=>{
-    axios.get(props.link)
-    .then((res)=>setData(res.data))
-    },[])
+
+    useEffect(()=> get(),[])
+      
+    function get() {
+      try {
+        axios.get(props.link)
+        .then((res)=>setData(res.data))
+        
+      } catch (error) {
+        console.log(error)
+        
+      }
+    }
+    
 
   return (
     <div className={style.container}>

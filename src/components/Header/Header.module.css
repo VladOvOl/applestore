@@ -27,11 +27,22 @@
 
 
 
-.containerLinks .link{
+.containerLinks .linkPassive{
     color:white;
     text-decoration: none;
     font-size: 25px;
     margin: 0 15px;
+}
+
+.containerLinks .linkActive{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 15px;
+    padding: 0 5px;
+    background-color: white;
+    border-radius: 17px;
+    
 }
 
 .search{
@@ -53,7 +64,6 @@
 .containerSidebar{
     display: none;
 }
-
 
 
 
@@ -90,7 +100,9 @@
 @media (max-width:1050px) and (min-width:840px) {
     .container{
         width: 800px;
+        height: 80px;
         justify-content: space-between;
+        
     }
 
     .containerLinks{
