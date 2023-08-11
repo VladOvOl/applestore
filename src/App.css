@@ -3,3 +3,20 @@
   flex-wrap: wrap;
 }
 
+.disablescroll{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    right: 0;
+    top: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container2{
+  flex: 1 1 auto;
+}

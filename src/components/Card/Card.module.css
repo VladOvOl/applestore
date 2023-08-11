@@ -25,8 +25,16 @@
     border-radius: 5px;
     background-color: brown;
     color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
 }
 
+.btn:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.4s ease-in;
+    
+}
 @media (max-width:1200px) and (min-width:1050px){
     .containerCard{
         width: 140px;

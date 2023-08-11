@@ -1,0 +1,63 @@
+.container{
+    background-color: #1D1D1D;
+    height: 100%;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+   
+    
+}
+
+.title{
+    color: white;
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+.containerBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BtnClose{
+    margin-left: 15px;
+}
+
+.containerCard{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.containerPrice{
+    width: 500px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price{
+    color: white;
+    font-size: 30px;
+}
+
+.btnBuy{
+    height: 50px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.btnBuy:hover{
+    background-color: black;
+    border:2px solid white;
+    color:white;
+    transition: all 0.4s ease-in-out;
+}

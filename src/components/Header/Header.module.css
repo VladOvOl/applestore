@@ -81,6 +81,7 @@
 @media (max-width:1200px) and (min-width:1050px) {
     .container{
         width: 900px;
+        height: 80px;
         justify-content: space-evenly;
     }
     
@@ -91,6 +92,10 @@
         justify-items: center;
         
 
+    }
+
+    .search{
+        width: 200px;
     }
 
 
@@ -120,6 +125,7 @@
 @media (max-width:840px) {
     .container{
         width: 100%;
+        
         justify-content: space-between;
     }
 

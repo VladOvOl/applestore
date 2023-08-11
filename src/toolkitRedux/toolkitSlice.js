@@ -5,16 +5,16 @@ const toolkitSlice =createSlice({
     name: 'toolkit',
 
     initialState:{
-        count:false
+        countMenu:false
     },
     reducers:{
-        change(state) {
-            state.count = !state.count
-            console.log(state.count)
+        changeMenu(state) {
+            state.countMenu = !state.countMenu
+            console.log(state.countMenu)
         }
     }
 })
 
 export default toolkitSlice.reducer
 
-export const { change} = toolkitSlice.actions
+export const { changeMenu} = toolkitSlice.actions

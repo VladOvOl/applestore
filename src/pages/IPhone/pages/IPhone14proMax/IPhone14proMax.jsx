@@ -5,6 +5,7 @@ function IPhone14proMax() {
   return (
     <div>
         <CanvasCard link = 'https://64c52e47c853c26efada96fd.mockapi.io/IPhone14proMax'/>
+        
     </div>
 
   )

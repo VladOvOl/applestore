@@ -3,25 +3,28 @@ import style from './Header.module.css'
 import { NavLink, Outlet } from 'react-router-dom'
 import Sidebar from '../Sidebar/Sidebar'
 import { useDispatch, useSelector } from 'react-redux'
-import { change } from '../../toolkitRedux/toolkitSlice'
+import { changeMenu } from '../../toolkitRedux/toolkitSlice'
+import { changeBag } from '../../toolkitRedux/storebagSlice'
+import BagStore from '../BagStore/BagStore'
 
 
-function Header(props) {
 
-    let[btnShow,setBtnShow]=useState(false)
-    let[btnClose,setBtnClose]=React.useState(false)
+function Header() {
+    const countMenu = useSelector(state => state.toolkit.countMenu)
+    const countBag = useSelector(state => state.bagstoreToolkit.countBag)
 
-    const count = useSelector(state => state.toolkit.count)
     const  dispatch = useDispatch()
 
+    
+
   return (
-    <div>
+    <>
         <div className={style.mainContainer}>
             <div className={style.container}>
 
             <div className={style.containerBtn}>
                 <img src={require('../../assets/img/btn=.png')} alt="btn" width={30}
-                onClick={()=>dispatch(change())}/>
+                onClick={()=>dispatch(changeMenu())}/>
             </div>
 
             <div className={style.containerLogo}>
@@ -42,11 +45,14 @@ function Header(props) {
             </div>
 
             <div className={style.containerBasket}>
-                <img src={require('../../assets/img/basket.png')} alt="basket" width={45} />
+                <img src={require('../../assets/img/basket.png')} alt="basket" width={45} 
+                onClick={()=>dispatch(changeBag())}/>
             </div>
 
             
-            {count && <Sidebar className={style.jh}/>}
+            {countMenu && <Sidebar />}
+
+            {countBag && <BagStore />}
             
             
             
@@ -54,9 +60,7 @@ function Header(props) {
 
             </div>
         </div>
-
-        <Outlet/>
-    </div>
+    </>
 
 
     

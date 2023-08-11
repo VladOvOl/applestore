@@ -1,22 +1,22 @@
 import React from 'react'
 import style from './Sidebar.module.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { change } from '../../toolkitRedux/toolkitSlice'
+import { changeMenu } from '../../toolkitRedux/toolkitSlice'
 import { Link } from 'react-router-dom'
 
 function Sidebar() {
 
-  const count = useSelector(state => state.toolkit.count)
+  //const countMenu = useSelector(state => state.toolkit.countMenu)
   const  dispatch = useDispatch()
 
   return (
     <div className={style.container}>
         <div className={style.containerTitle}>
             <div className={style.containerBtnX}>
-                <p className={style.text}>Apple</p>
+                <Link className={style.text} to='/'>Apple</Link>
 
                 <img className={style.BtnX } src={require('../../assets/img/BtnX.png')} alt="" width={30} height={30}
-                onClick={()=>dispatch(change())}/>
+                onClick={()=>dispatch(changeMenu())}/>
             </div>
             <hr />
             <div className={style.containerMenu}>

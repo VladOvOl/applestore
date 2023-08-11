@@ -7,15 +7,19 @@ import IPhone14proMax from './pages/IPhone/pages/IPhone14proMax/IPhone14proMax'
 import IPadMain from './pages/IPad/IPadMain/IPadMain';
 import IPad from './pages/IPad/IPad/IPad';
 import Homepage from './pages/Homepage/Homepage';
+import {useSelector } from 'react-redux';
+import Footer from './components/Footer/Footer';
+import Layout from './components/Layout/Layout';
 
 function App() {
 
-    
+  const countBag = useSelector(state => state.bagstoreToolkit.countBag)
   
   return (
-    <div className="App">
-        <Routes> 
-            <Route path='/' element={<Header/>}>
+    <div className={countBag  ? ['disablescroll']:['']}>
+
+      <Routes> 
+            <Route path='/' element={<Layout/>}>
                 <Route index element={<Homepage/>} />
                 <Route path='/IPhoneMain' element={<IPhoneMain/>} />
                 <Route path='/Apple_iPhone_14_Pro_Max'element={ <IPhone14proMax />}/>
@@ -23,8 +27,8 @@ function App() {
                 <Route path='/Apple_Ipad' element={<IPad/>}></Route>
                 <Route path='/AppleWatchMain' element={<IPhoneMain/>} />
             </Route>
-
         </Routes>
+
         
     </div>
   );
