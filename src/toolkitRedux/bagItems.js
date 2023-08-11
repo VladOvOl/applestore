@@ -14,12 +14,7 @@ const bagItems =createSlice({
             state.items.push(action.payload);
         },
         removeFrombag(state, action) {
-            const findItem = state.items.find((obj) => obj.id === action.payload);
-
-      if (findItem) {
-        findItem.count--;
-      }
-
+            state.items.pop(action.payload);
           },
         addToprice(state,action){
             state.price = state.price + action.payload 

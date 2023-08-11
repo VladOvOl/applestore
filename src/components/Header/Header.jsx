@@ -32,12 +32,12 @@ function Header() {
             </div>
 
             <div className={style.containerLinks}>
-                <NavLink className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/IPhoneMain">IPhone</NavLink>
-                <NavLink className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/IPadMain" >IPad</NavLink>
-                <NavLink className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/MacMain" >Mac</NavLink>
-                <NavLink className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/AppleWatchMain" >AppleWatch</NavLink>
-                <NavLink className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/AirPodsMain" >AirPods</NavLink>
-                <NavLink className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/Appleby" >Apple б/у</NavLink>
+                <NavLink id={style.link} className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/IPhoneMain">IPhone</NavLink>
+                <NavLink id={style.link} className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/IPadMain" >IPad</NavLink>
+                <NavLink id={style.link} className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/MacMain" >Mac</NavLink>
+                <NavLink id={style.link} className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/AppleWatchMain" >AppleWatch</NavLink>
+                <NavLink id={style.link} className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/AirPodsMain" >AirPods</NavLink>
+                <NavLink id={style.link} className={({isActive})=>(isActive ? [style.linkActive]:[style.linkPassive])} to="/Appleby" >Apple б/у</NavLink>
             </div>
 
             <div className={ style.containerSearch}>

@@ -10,19 +10,22 @@ function Card(props) {
   return (
     <div className={style.container}>
         <div className={style.containerImg}>
-            <img className={style.img}src={props.imgUrl} alt="" 
-            width={150}/>
-        </div>
+                <img className={style.img}src={props.imgUrl} alt="" 
+                width={150}/>
+            </div>
+            <div className={style.containerTextandPrice}>
 
-        <div className={style.containerText}>
-            <p className={style.text}>{props.text}</p>
-        </div>
+            </div>
+            <div className={style.containerText}>
+                <p className={style.text}>{props.text}</p>
+            </div>
 
-        <div className={style.containerPrice}>
-            <p className={style.price}>{props.price} грн</p>
-        </div>
-
-        <button onClick={()=>dispatch(removeFrombag())}></button>
+            <div className={style.containerPrice}>
+                <p className={style.price}>{props.price} грн</p>
+            </div>
+        
+        
+        <button className={style.btn}onClick={()=>dispatch(removeFrombag())}>Видалити з кошика</button>
     </div>
   )
 }

@@ -32,6 +32,8 @@
     text-decoration: none;
     font-size: 25px;
     margin: 0 15px;
+    border-radius: 17px;
+    
 }
 
 .containerLinks .linkActive{
@@ -43,6 +45,8 @@
     background-color: white;
     border-radius: 17px;
     
+    
+    
 }
 
 .search{
@@ -50,7 +54,13 @@
 }
 
 .containerBasket{
-    color: white;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.containerBasket:hover{
+    margin-bottom: 4px;
+    transition: all 0.2s ease-in-out;
+   
 }
 
 .containerSidebar{
