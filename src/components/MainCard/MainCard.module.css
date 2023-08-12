@@ -4,9 +4,12 @@
     padding: 10px;
     background-color: #0F0F0F;
     color: white;
-    border-radius: 10px;
     text-align: center;
     text-decoration: none;
+}
+
+.container:hover{
+    opacity: 0.85;
 }
 
 

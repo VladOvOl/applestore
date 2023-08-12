@@ -4,11 +4,13 @@
     padding: 10px;
     background-color: #1D1D1D;
     color: white;
-    border-radius: 10px;
     text-align: center;
-
-
 }
+
+.containerCard:hover{
+    opacity: 0.85;
+}
+
 
 .text{
     margin: 0;

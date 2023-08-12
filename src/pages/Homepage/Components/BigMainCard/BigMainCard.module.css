@@ -1,6 +1,6 @@
 .container{
     background-color: #1D1D1D;
-    width: 260px;
+    width: 550px;
     height: 260px;
     margin-bottom: 35px;
     cursor: pointer;
@@ -13,6 +13,8 @@
     display: flex;
     justify-content: center;
 }
+
+
 
 .text{
     font-size: 27px;
@@ -27,15 +29,36 @@
     opacity: 0.8;
 }
 
+
+@media (max-width:1200px) {
+    .container{
+        width: 260px;
+    }
+
+    .Img{
+        width: 200px;
+    }
+    
+}
 @media (max-width:650px) {
     .container{
         margin: 0 10px 20px;
+        width: 260px;
     }
+    .Img{
+        width: 200px;
+    }
+    
     
 }
 
 @media (max-width:1050px) and (min-width:840px){
     .container{
         margin: 4px 0 ;
+        width: 260px;
     }
+    .Img{
+        width: 200px;
+    }
+    
 }

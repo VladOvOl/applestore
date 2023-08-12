@@ -2,6 +2,7 @@ import React from 'react'
 import style from './CanvasNews.module.css'
 import CardNews from '../CardNews/CardNews'
 
+
 function CanvasNews() {
 
   let arr=[
@@ -66,9 +67,7 @@ function CanvasNews() {
         <div className={style.containerCard}>
           {arr.map((obj)=>(<CardNews id={obj.id} text={obj.text} img={obj.img} btn={obj.btn}/>))}
         </div>
-
-        
-
+      
     </div>
   )
 }

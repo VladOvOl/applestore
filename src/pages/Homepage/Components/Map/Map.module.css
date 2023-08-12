@@ -53,10 +53,12 @@
 }
 
 .passiveBtn{
+    cursor: pointer;
     color: #1D1D1D;
     transition: all 0.4s ease-in-out;
 }
 .activeBtn{
+    cursor: pointer;
     transform: rotate(180deg);
     transition: all 0.4s ease-in-out;
 }
