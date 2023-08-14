@@ -3,8 +3,6 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import MainCard from '../MainCard/MainCard'
 import style from './CanvasMainCard.module.css'
-import { Link } from 'react-router-dom';
-import  {ReactComponent as Mylogo}  from '../../assets/img/loading.svg';
 import Prelovder from '../Prelovder/Prelovder';
 
 function CanvasMainCard(props) {
@@ -30,7 +28,7 @@ function CanvasMainCard(props) {
   return (
     <div className={style.container}>
         {isLoading && <Prelovder/>}
-        {data.map((obj)=>(<MainCard key={obj.id} text={obj.text}  link={obj.link}
+        {data.map((obj,index)=>(<MainCard key={index} text={obj.text}  link={obj.link}
         imgUrl={obj.imgUrl} />))}
 
         

@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { changeMenu } from '../../toolkitRedux/toolkitSlice'
 import { changeBag } from '../../toolkitRedux/storebagSlice'
 import BagStore from '../BagStore/BagStore'
+import { changeInput } from '../../toolkitRedux/toolkitSearch'
 
 
 
@@ -41,7 +42,8 @@ function Header() {
             </div>
 
             <div className={ style.containerSearch}>
-                <input className={style.search} type="search" placeholder='Search'/>
+                <input className={style.search} type="search" placeholder='Search'
+                onChange={(e)=>dispatch(changeInput(e.target.value))}/>
             </div>
 
             <div className={style.containerBasket}>
@@ -49,7 +51,7 @@ function Header() {
                 onClick={()=>dispatch(changeBag())}/>
             </div>
 
-            
+        
             {countMenu && <Sidebar />}
 
             {countBag && <BagStore />}

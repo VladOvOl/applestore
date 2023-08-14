@@ -12,10 +12,17 @@ const bagItems =createSlice({
     reducers:{
         addTobag(state,action) {
             state.items.push(action.payload);
+            
         },
         removeFrombag(state, action) {
-            state.items.pop(action.payload);
+            state.items.splice(action.payload,1);
           },
+        
+        removePriceFrombag(state,action){
+            console.log(state.price)
+            console.log(action.payload)
+            state.price = state.price - Number(action.payload)
+        },
         addToprice(state,action){
             state.price = state.price + action.payload 
         },
@@ -28,4 +35,4 @@ const bagItems =createSlice({
 
 export default bagItems.reducer
 
-export const { addTobag ,addToprice,removeFrombag,clearItems} = bagItems.actions
+export const { addTobag ,addToprice,removeFrombag,clearItems,removePriceFrombag} = bagItems.actions

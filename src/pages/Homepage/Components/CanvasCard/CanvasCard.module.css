@@ -1,0 +1,56 @@
+
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    width:1150px;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-x: auto;
+    
+}
+
+@media (max-width:1200px) and (min-width:1050px){
+    .container{
+        width: 900px;
+    }
+}
+
+@media (max-width:1050px) and (min-width:780px){
+    .container{
+        width: 800px;
+    }
+}
+
+@media (max-width:780px){
+    .container{
+        width: 600px;
+        
+    }
+}
+
+@media (max-width:601px) {
+    .container{
+        width: 100%;
+        padding-left: -100%;
+    }
+}
+
+
+.container::-webkit-scrollbar {
+    width: 10px;               /* ширина всей полосы прокрутки */
+    
+    
+  }
+  
+  .container::-webkit-scrollbar-track {
+    background: rgb(178, 178, 178);        /* цвет зоны отслеживания */
+    margin: 0 10px;
+    border-radius: 20px; 
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background-color: rgb(206, 26, 26);    /* цвет бегунка */
+    border-radius: 20px;       /* округлось бегунка */
+    
+  }

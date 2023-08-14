@@ -1,11 +1,16 @@
 import React from 'react'
 import style from './Card.module.css'
 import { useDispatch } from 'react-redux'
-import { removeFrombag } from '../../../../toolkitRedux/bagItems'
+import { removeFrombag,removePriceFrombag } from '../../../../toolkitRedux/bagItems'
 
 function Card(props) {
 
   const dispatch = useDispatch()
+
+  function remove(){
+    dispatch(removeFrombag())
+    dispatch(removePriceFrombag(props.price))
+  }
 
   return (
     <div className={style.container}>
@@ -25,7 +30,7 @@ function Card(props) {
             </div>
         
         
-        <button className={style.btn}onClick={()=>dispatch(removeFrombag())}>Видалити з кошика</button>
+        <button className={style.btn}onClick={remove}>Видалити з кошика</button>
     </div>
   )
 }

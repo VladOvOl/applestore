@@ -1,12 +1,18 @@
 .containerCard{
     width: 160px;
+    height: 286px;
     margin: 10px 10px;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     background-color: #1D1D1D;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+.containerMain{
+    flex: 1 1 auto;
+}
 .containerCard:hover{
     opacity: 0.85;
 }

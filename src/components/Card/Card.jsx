@@ -11,7 +11,7 @@ function Card(props) {
         dispatch(addTobag({text:props.text, imgUrl:props.imgUrl, price:props.price}))
         console.log('dvdvd')
         dispatch(addToprice(props.price))
-        //
+        
 
     }
    
@@ -24,13 +24,18 @@ function Card(props) {
                 width={150}/>
             </div>
 
-            <div className={style.containerText}>
-                <p className={style.text}>{props.text}</p>
-            </div>
+            <div className={style.containerMain}>
 
-            <div className={style.containerPrice}>
-                <p className={style.price}>{props.price} грн</p>
+                <div className={style.containerText}>
+                    <p className={style.text}>{props.text}</p>
+                </div>
+
+                <div className={style.containerPrice}>
+                    <p className={style.price}>{props.price} грн</p>
+                </div>
+            
             </div>
+            
             <div className={style.containerBtn}>
                 <button className={style.btn} onClick={addTobasket}> Купить</button>
             </div>

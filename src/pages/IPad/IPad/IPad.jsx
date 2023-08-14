@@ -5,7 +5,7 @@ import CanvasCard from '../../../components/CanvasCard/CanvasCard'
 function IPad() {
   return (
     <div className={style.container}>
-        <CanvasCard link="https://64c52e47c853c26efada96fd.mockapi.io/Ipad"/>
+        <CanvasCard link="https://64c62670c853c26efadb23b6.mockapi.io/Models?text=Apple iPad 10.9 "/>
     </div>
   )
 }
