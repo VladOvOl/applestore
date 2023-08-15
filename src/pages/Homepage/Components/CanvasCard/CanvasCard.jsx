@@ -10,7 +10,6 @@ function CanvasCard(props) {
   
   const[isLoading,setIsLoading]=useState(false)
   const[data, setData] = useState([])
-  
 
   useEffect(()=>{
     setIsLoading(true)
@@ -27,10 +26,11 @@ function CanvasCard(props) {
 
   return (
         <div className={style.container}>
-          {isLoading && <Prelovder/>}
-          {data.filter((obj)=>obj.text.toLowerCase().includes(inputSearch.toLowerCase())).sort(() => Math.random() - 0.5).map((obj,index)=>(<Card key={index} text={obj.text} 
-          imgUrl={obj.imgUrl} price={obj.price}/>))}
-        </div>
+            {isLoading && <Prelovder/>}
+            {data.filter((obj)=>obj.text.toLowerCase().includes(inputSearch.toLowerCase())).sort(() => Math.random() - 0.5).map((obj,index)=>(<Card key={index} text={obj.text} 
+            imgUrl={obj.imgUrl} price={obj.price}/>))}
+    </div>
+        
     
   )
 }

@@ -20,6 +20,7 @@ import IPhone13 from './pages/IPhone/pages/IPhone13/IPhone13';
 import IPhone12 from './pages/IPhone/pages/IPhone12/IPhone12';
 import IPhone11 from './pages/IPhone/pages/IPhone11/IPhone11';
 import IPhoneSe from './pages/IPhone/pages/IPhoneSe/IPhoneSe';
+import IPhone13Mini from './pages/IPhone/pages/IPhone13Mini/IPhone13Mini';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
                         <Route path='/Apple_iPhone_14_Plus'element={ <IPhone14Plus />}/>
                         <Route path='/Apple_iPhone_13_Pro_Max'element={ <IPhone13proMax />}/>
                         <Route path='/Apple_iPhone_13_Pro'element={ <IPhone13pro />}/>
+                        <Route path='/Apple_iPhone_13_Mini'element={ <IPhone13Mini/>}/>
                         <Route path='/Apple_iPhone_13'element={ <IPhone13/>}/>
                         <Route path='/Apple_iPhone_12'element={ <IPhone12/>}/>
                         <Route path='/Apple_iPhone_11'element={ <IPhone11/>}/>

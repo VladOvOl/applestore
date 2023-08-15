@@ -3,10 +3,11 @@ import style from './Sidebar.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeMenu } from '../../toolkitRedux/toolkitSlice'
 import { Link } from 'react-router-dom'
+import { changeInput } from '../../toolkitRedux/toolkitSearch'
 
 function Sidebar() {
 
-  //const countMenu = useSelector(state => state.toolkit.countMenu)
+
   const  dispatch = useDispatch()
     
   return (
@@ -17,6 +18,11 @@ function Sidebar() {
 
                 <img className={style.BtnX } src={require('../../assets/img/BtnX.png')} alt="" width={30} height={30}
                 onClick={()=>dispatch(changeMenu())}/>
+            </div>
+            <hr />
+            <div className={ style.containerSearch}>
+                <input className={style.search} type="search" placeholder='Search'
+                onChange={(e)=>dispatch(changeInput(e.target.value))}/>
             </div>
             <hr />
             <div className={style.containerMenu}>

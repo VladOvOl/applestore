@@ -11,10 +11,15 @@ function Homepage() {
 
   return (
     <div className={style.container}>
-        <CanvasCard link="https://64c62670c853c26efadb23b6.mockapi.io/Models"/>
-        <MainCardCanvas/>
-        <CanvasNews/>
-        <Map/>
+      <div className={style.containerTitle}>
+            <p className={style.title}>Нещодавно переглянуті</p>
+      </div>
+            <CanvasCard link="https://64c62670c853c26efadb23b6.mockapi.io/Models"/>
+            <MainCardCanvas/>
+            <CanvasNews/>
+            <Map/>
+      
+        
     </div>
 
   )
