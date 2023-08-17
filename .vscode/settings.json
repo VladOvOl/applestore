@@ -1,5 +1,5 @@
 {
     "editor.tabCompletion": "off",
     "editor.stickyTabStops": false,
-    "prettier.tabWidth": 2
+    "prettier.tabWidth": 4
 }

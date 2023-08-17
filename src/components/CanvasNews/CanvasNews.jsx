@@ -67,7 +67,7 @@ function CanvasNews() {
         </div>
 
         <div className={style.containerCard}>
-          {arr.map((obj,index)=>(<CardNews id={arr[index]} text={obj.text} img={obj.img} btn={obj.btn}/>))}
+          {arr.map((obj,index)=>(<CardNews id={index} text={obj.text} img={obj.img} btn={obj.btn}/>))}
         </div>
     </div>
   )

@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import Card from '../../../../components/Card/Card';
 import style from './CanvasCard.module.css'
 import Prelovder from '../../../../components/Prelovder/Prelovder';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { chooseLength } from '../../../../toolkitRedux/toolkitSearch';
 
 function CanvasCard(props) {
   
@@ -24,10 +25,12 @@ function CanvasCard(props) {
     
   let inputSearch = useSelector(state => state.toolkitSearch.inputText)
 
+  let searchArr = (data.filter((obj)=>obj.text.toLowerCase().includes(inputSearch.toLowerCase())))
+  
   return (
         <div className={style.container}>
             {isLoading && <Prelovder/>}
-            {data.filter((obj)=>obj.text.toLowerCase().includes(inputSearch.toLowerCase())).sort(() => Math.random() - 0.5).map((obj,index)=>(<Card key={index} text={obj.text} 
+            {searchArr.sort(() => Math.random() - 0.5).map((obj,index)=>(<Card key={index} text={obj.text} 
             imgUrl={obj.imgUrl} price={obj.price}/>))}
     </div>
         

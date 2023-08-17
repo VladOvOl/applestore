@@ -8,7 +8,6 @@ const bagItems =createSlice({
     initialState:{
         price : 0,
         items : [],
-        colorBtn : false
     },
     reducers:{
         addTobag(state,action) {

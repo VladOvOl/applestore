@@ -12,9 +12,10 @@ function Homepage() {
   return (
     <div className={style.container}>
       <div className={style.containerTitle}>
-            <p className={style.title}>Нещодавно переглянуті</p>
+            <p className={style.title}>Популярні товари</p>
       </div>
             <CanvasCard link="https://64c62670c853c26efadb23b6.mockapi.io/Models"/>
+            <CanvasCard link="https://64c52e47c853c26efada96fd.mockapi.io/Models"/>
             <MainCardCanvas/>
             <CanvasNews/>
             <Map/>

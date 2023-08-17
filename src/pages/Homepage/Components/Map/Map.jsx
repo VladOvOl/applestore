@@ -24,7 +24,7 @@ function Map() {
             </div>
                 
             <div className={showMap  ? style.containerMapActive : style.containerMapPassive}>
-                {showMap && <iframe className={style.map} style={{border: 0}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5495.163589105477!2d30.72709918750304!3d46.47679110000002!2m3!1f0!2f0!3f0!3m2!1i1024 ! 2i768!4f13.1!3m3!1m2!1s0x40c6319a74300857%3A0xdc41cc58027fe9b7!2sInweb!5e0!3m2!1sen!2sua!4v1688986013576!5m2!1sen!2sua" allowfullscreen="allowfullscreen" lazy="" referrerpolicy="no-referrer-when -downgrade"></iframe>}
+                {showMap && <iframe className={style.map} style={{border: 0}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5495.163589105477!2d30.72709918750304!3d46.47679110000002!2m3!1f0!2f0!3f0!3m2!1i1024 ! 2i768!4f13.1!3m3!1m2!1s0x40c6319a74300857%3A0xdc41cc58027fe9b7!2sInweb!5e0!3m2!1sen!2sua!4v1688986013576!5m2!1sen!2sua" allowfullscreen="allowfullscreen" lazy="" referrerpolicy="no-referrer-when -downgrade"></iframe>}         
             </div>
         </div>
     </>

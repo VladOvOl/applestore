@@ -1,5 +1,126 @@
-.container{
-    height: 100px;
+.containerMain{
+    height: fit-content;
     width: 100%;
     background-color: black;
+
 }
+
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.containerPhone{
+    display: none;
+}
+
+h4{
+    color: white;
+    font-weight: 400;
+}
+ul{
+    color: #6D6B6D;
+    list-style-type: none;
+    padding-left: 0;
+    cursor: pointer;
+    
+    
+}
+li:hover{
+    color: white;
+}
+.img:hover{
+    opacity: 0.5;
+}
+
+
+
+@media (min-width:1200px){
+
+    .container{
+        width: 1200px;
+        
+    }
+
+}
+
+@media (max-width:1200px) and (min-width:1050px) {
+    .container{
+        width: 900px;
+    }
+
+}
+
+@media (max-width:1050px) and (min-width:840px) {
+    .container{
+        width: 740px;
+        justify-content: space-between;
+        
+    }
+}
+
+@media (max-width:840px) {
+    .container{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:620px) {
+
+    .containerMain{
+        background-color: #E2E2E2;
+    }
+    .container {
+        display: none;
+    }
+
+
+    .containerPhone{
+        width: 100%;
+        display: inline;
+    }
+
+    .containerProductionPhone,.containerServicePhone,.containerInformationPhone,.containerQAPhone{
+        width: 100%;
+        background-color: #1D1D1D;
+    }
+
+    .containerTitle{
+        font-size: 17px;
+        padding: 10px 20px;
+        padding-right: 30px;
+        color: white;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .textPassive{
+        align-items: center;
+    }
+
+    .textActive{
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .containerIphone, .containerIpad , .containerMac ,.containerAppleWatch, 
+    .containerAirPods, .containerIphoneby, .containerRepair{
+        display: flex;
+        align-items: center;
+        margin: 2px 20px;
+
+    }
+
+    .link{
+        text-decoration: none;
+        color: white;
+    }
+
+}   
+

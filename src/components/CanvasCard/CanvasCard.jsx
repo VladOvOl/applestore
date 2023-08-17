@@ -28,10 +28,10 @@ function CanvasCard(props) {
   return (
     <div className={style.container}>
         {isLoading && <Prelovder/>}
-        {   data.length > 0 ?
+        {
             data.filter((obj)=>obj.text.includes(inputSearch))
             .map((obj,index)=>(<Card key={index} text={obj.text} 
-            imgUrl={obj.imgUrl} price={obj.price}/>)):<div>EROR</div>
+            imgUrl={obj.imgUrl} price={obj.price}/>))
         }
 
          
