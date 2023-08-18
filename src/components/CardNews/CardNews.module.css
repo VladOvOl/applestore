@@ -9,6 +9,9 @@
     transition: all 0.3s ease-in-out;
 }
 
+.img{
+    width: 200px;
+}
 
 .text{
     text-align: center;
@@ -43,5 +46,130 @@
     margin-top: 5px;
     transition: all 0.3s ease-in-out;
     opacity: 0.95;
+
+}
+
+@media (max-width:480px) {
+    .container{
+        width: 140px;
+        height: 183px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container:hover{
+        height: 228px;
+    }
+    .img{
+        width: 140px;
+    }
+
+    .text{
+        font-size: 11px;
+    }
+
+    .activeBtn{
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width:360px) {
+    .container{
+        width: 120px;
+        height: 183px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container:hover{
+        height: 228px;
+    }
+    .img{
+        width: 120px;
+    }
+
+    .text{
+        font-size: 10px;
+    }
+
+    .activeBtn{
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width:320px) {
+    .container{
+        width: 100px;
+        height: 163px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container:hover{
+        height: 208px;
+    }
+    .img{
+        width: 100px;
+    }
+
+    .text{
+        font-size: 10px;
+    }
+
+    .activeBtn{
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width:280px) {
+    .container{
+        width: 100px;
+        height: 163px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container:hover{
+        height: 208px;
+    }
+    .img{
+        width: 100px;
+    }
+
+    .text{
+        font-size: 10px;
+    }
+
+    .activeBtn{
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width:280px) {
+    .container{
+        width: 150px;
+        height: 206px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container:hover{
+        height: 228px;
+    }
+    .img{
+        width: 150px;
+    }
+
+    .text{
+        font-size: 12px;
+    }
+
+    .activeBtn{
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
 
 }

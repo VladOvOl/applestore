@@ -17,6 +17,9 @@
     opacity: 0.85;
 }
 
+.img{
+    width: 150px;
+}
 
 .text{
     margin: 0;
@@ -63,4 +66,26 @@
     .containerCard{
         width: 140px;
     }
+}
+
+@media (max-width:400px) {
+    .containerCard{
+        width: 100px;
+        font-size: 11px;
+        height: 206px;
+        
+    }
+    .containerMain{
+        flex: 1 1 auto;
+    }
+
+    .img{
+        width: 100px;
+        
+    }
+
+    .btnRed{
+        font-size: 14px;
+    }
+    
 }

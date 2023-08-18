@@ -11,16 +11,18 @@ function CardNews(props) {
         onMouseLeave={()=>setOnFocus(false)}>
 
         <div className={style.containerImg}>
-            <img src={props.img} 
-            alt=""  width={200}/>
+            <img className={style.img}src={props.img} alt="" />
         </div>
-        <div className={onFocus ? [style.activeBtn] : [style.passiveBtn]}>
-          <button className={style.btn}>{props.btn}</button>
+        <div className={style.containerMain}>
+          <div className={onFocus ? [style.activeBtn] : [style.passiveBtn]}>
+            <button className={style.btn}>{props.btn}</button>
 
+          </div>
+          <div className={style.containerText}>
+            <p className={style.text}>{props.text}</p>
+          </div>
         </div>
-        <div className={style.containerText}>
-          <p className={style.text}>{props.text}</p>
-        </div>
+        
     </div>
   )
 }

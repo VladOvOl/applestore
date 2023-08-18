@@ -8,8 +8,7 @@ function MainCard(props) {
     
     <Link to={props.link}className={style.container}>
         <div className={style.containerImg}>
-            <img src={props.imgUrl} 
-            alt="" width={150}/>
+            <img className={style.img}src={props.imgUrl}  alt=""/>
         </div>
 
         <div className={style.containerText}>

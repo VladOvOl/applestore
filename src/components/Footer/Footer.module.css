@@ -92,7 +92,6 @@ li:hover{
     .containerTitle{
         font-size: 17px;
         padding: 10px 20px;
-        padding-right: 30px;
         color: white;
         margin: 5px 0;
         display: flex;
@@ -102,6 +101,8 @@ li:hover{
 
     .textPassive{
         align-items: center;
+        margin: 0;
+        font-size: 12px;
     }
 
     .textActive{
