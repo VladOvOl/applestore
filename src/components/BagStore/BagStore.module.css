@@ -16,12 +16,21 @@
     
 }
 
+.imgBasket{
+    width: 200px;
+    height: 200px;
+}
+
 .title{
     color: white;
     font-size: 30px;
     margin: 10px auto;
 }
-
+.containerImgBasket{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .containerBtn{
     display: flex;
     justify-content: space-between;
@@ -91,4 +100,32 @@
     .price{
         margin: 15px 0;
     }
+}
+
+@media (max-width:310px) {
+    
+    .containerImgBasket{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .imgBasket{
+        width: 150px;
+        height: 150px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .btnBuy{
+        font-size: 18px;
+    }
+    
 }

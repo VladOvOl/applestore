@@ -8,14 +8,19 @@ const bagItems =createSlice({
     initialState:{
         price : 0,
         items : [],
+        count:0
     },
     reducers:{
         addTobag(state,action) {
             state.items.push(action.payload);
+            state.count = state.count+1;
             
         },
         removeFrombag(state, action) {
             state.items.splice(action.payload,1);
+            if(state.count!=0){
+            state.count = state.count-1;
+            }
           },
         
         removePriceFrombag(state,action){
@@ -29,6 +34,7 @@ const bagItems =createSlice({
         clearItems(state) {
             state.items = [];
             state.price = 0;
+            state.count = 0
         },
     }
 })

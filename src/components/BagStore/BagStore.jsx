@@ -34,8 +34,8 @@ function BagStore() {
         <div className={style.containerCard}>
           { cartItems.length > 0 ?  cartItems.map((obj)=><Card 
             text={obj.text} imgUrl={obj.imgUrl} price ={obj.price}/>):
-            <div>
-                <img src={require('../../assets/img/basketBagStore.png')} alt="" width={200} height={200}/>
+            <div className={style.containerImgBasket}>
+                <img className={style.imgBasket}src={require('../../assets/img/basketBagStore.png')} alt="" />
                 <p className={style.text}>Кошик пустий</p>
             </div>}
         </div>

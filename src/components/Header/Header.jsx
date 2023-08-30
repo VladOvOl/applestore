@@ -11,8 +11,9 @@ import { changeInput } from '../../toolkitRedux/toolkitSearch'
 
 
 function Header() {
-    const countMenu = useSelector(state => state.toolkit.countMenu)
-    const countBag = useSelector(state => state.bagstoreToolkit.countBag)
+    const stateMenu = useSelector(state => state.toolkit.countMenu)
+    const stateBag = useSelector(state => state.bagstoreToolkit.countBag)
+    const countBag = useSelector(state => state.bagItems.count)
 
     const  dispatch = useDispatch()
 
@@ -47,14 +48,16 @@ function Header() {
             </div>
 
             <div className={style.containerBasket}>
-                <img src={require('../../assets/img/basket.png')} alt="basket" width={45} 
-                onClick={()=>dispatch(changeBag())}/>
+                <img src={require('../../assets/img/basket.png')} alt="basket" width={45} />
+                <div className={style.containerCount} onClick={()=>dispatch(changeBag())}>
+                    <p className={style.text}>{countBag}</p>
+                </div>
             </div>
 
         
-            {countMenu && <Sidebar />}
+            {stateMenu && <Sidebar />}
 
-            {countBag && <BagStore />}
+            {stateBag && <BagStore />}
             
             
             

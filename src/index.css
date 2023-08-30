@@ -8,6 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(226, 226, 226);
 }
+
+*{
+  margin: 0;
+}
 html {
   margin-right: calc(-1 * (100vw - 100%));
   overflow-x: hidden;

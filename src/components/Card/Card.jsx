@@ -7,13 +7,13 @@ function Card(props) {
 
     const dispatch = useDispatch()
 
-    let [btn,setBtn]=useState(false)
+    //let [btn,setBtn]=useState(false)
 
     function addTobasket(){
         dispatch(addTobag({text:props.text, imgUrl:props.imgUrl, price:props.price}))
         console.log('dvdvd')
         dispatch(addToprice(props.price))
-        setBtn(!btn)
+        //setBtn(!btn)
 
         
 
@@ -40,7 +40,7 @@ function Card(props) {
             </div>
             
             <div className={style.containerBtn}>
-                <button className={btn ?style.btnGreen:style.btnRed} onClick={addTobasket}>{btn ? "В Кошику" : "Купити"}</button>
+                <button className={style.btnRed/*btn ?style.btnGreen:style.btnRed*/} onClick={addTobasket}>{/*btn ? "В Кошику" : */"Купити"}</button>
             </div>
         </div>
 

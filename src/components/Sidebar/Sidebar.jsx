@@ -27,55 +27,68 @@ function Sidebar() {
             <hr />
             <div className={style.containerMenu}>
 
-                <div className={style.containerIphone }>
-                    <img src={require('../../assets/img/iphone.png')} 
-                    width={40} alt="" />
-                    <Link className={style.link} to="/IPhoneMain" onClick={()=>dispatch(changeMenu())}>Iphone</Link>
-                </div>
+               
+                <Link className={style.link} to="/IPhoneMain" onClick={()=>dispatch(changeMenu())}> 
+                    <div className={style.containerIphone }>
+                        <img src={require('../../assets/img/iphone.png')} width={40} alt="" /> 
+                        iPhone
+                    </div>
+                </Link>
+            
+                <Link className={style.link} to="/IPadMain" onClick={()=>dispatch(changeMenu())}>
+                    <div className={style.containerIpad}>
+                        <img src={require('../../assets/img/ipad.png')} width={40} alt="" />
+                        iPade
+                    </div>
+                </Link>
 
-                <div className={style.containerIpad}>
-                    <img src={require('../../assets/img/ipad.png')} 
-                    width={40} alt="" />
-                    <Link className={style.link} to="/IPadMain" onClick={()=>dispatch(changeMenu())}>IPade</Link>
-                </div>
+                <Link className={style.link} to="/MacMain" onClick={()=>dispatch(changeMenu())}>
+                    <div className={style.containerMac}>
+                        <img src={require('../../assets/img/macbook.png')} width={40} alt="" />
+                        Mac
+                    </div>
+                </Link>
+                
+                <Link className={style.link} to="/AppleWatchMain" onClick={()=>dispatch(changeMenu())}>
+                    <div className={style.containerAirPods}>
+                        <img src={require('../../assets/img/watch.png')} width={40} alt="" />
+                        AppleWatch
+                    </div>
+                </Link>
 
-                <div className={style.containerMac}>
-                    <img src={require('../../assets/img/macbook.png')} 
-                    width={40} alt="" />
-                    <Link className={style.link} to="/MacMain" onClick={()=>dispatch(changeMenu())}>Mac</Link>
-                </div>
+                <Link className={style.link} to="/AirPodsMain" onClick={()=>dispatch(changeMenu())}>
+                    <div className={style.containerAppleWatch}>
+                        <img src={require('../../assets/img/airpoods.png')} width={30} alt="" />
+                        AirPods
+                    </div>
+                </Link>
 
-                <div className={style.containerAirPods}>
-                    <img src={require('../../assets/img/watch.png')} 
-                    width={40} alt="" />
-                    <Link className={style.link} to="/AppleWatchMain" onClick={()=>dispatch(changeMenu())}>AppleWatch</Link>
-                </div>
+                <Link className={style.link} to="/Appleby" onClick={()=>dispatch(changeMenu())}>
+                    <div className={style.containerIphoneby}>
+                        <img src={require('../../assets/img/iphone.png')} width={40} alt="" />
+                        Iphoneб б/y
+                    </div>
+                </Link>
 
-                <div className={style.containerAppleWatch}>
-                    <img src={require('../../assets/img/airpoods.png')} 
-                    width={30} alt="" />
-                    <Link className={style.link} to="/AirPodsMain" onClick={()=>dispatch(changeMenu())}>AirPods</Link>
-                </div>
-
-                <div className={style.containerIphoneby}>
-                    <img src={require('../../assets/img/iphone.png')} 
-                    width={40} alt="" />
-                    <Link className={style.link} to="/Appleby" onClick={()=>dispatch(changeMenu())}>Iphoneб б/у</Link>
-                </div>
 
                 <hr />
 
-                <div className={style.containerRepair}>
-                    <img src={require('../../assets/img/repair.png')} 
-                    width={40} alt="" />
-                    <Link className={style.link} to="/Appleby" onClick={()=>dispatch(changeMenu())}>Ремонт</Link>
-                </div>
+                <Link className={style.link} to="/Appleby" onClick={()=>dispatch(changeMenu())}>
+                    <div className={style.containerRepair}>
+                        <img src={require('../../assets/img/repair.png')} width={40} alt="" />
+                        Ремонт
+                    </div>
+ 
+                </Link>
+                
 
-                <div className={style.containerRepair}>
-                    <img src={require('../../assets/img/traide.png')} 
-                    width={30} alt="" />
-                    <Link className={style.link} to="/Appleby" onClick={()=>dispatch(changeMenu())}>Traide</Link>
-                </div>
+                <Link className={style.link} to="/Appleby" onClick={()=>dispatch(changeMenu())}>                
+                    <div className={style.containerRepair}>
+                        <img src={require('../../assets/img/traide.png')} width={30} alt="" />
+                        Traide
+                    </div>
+                </Link>
+
                 <hr />
 
             </div>

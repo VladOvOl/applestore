@@ -85,7 +85,13 @@
     }
 
     .btnRed{
-        font-size: 14px;
+        padding: 4px;
+        font-size: 12px;
     }
+    .btnGreen{
+        font-size: 12px;
+        padding: 4px;
+    }
+
     
 }
